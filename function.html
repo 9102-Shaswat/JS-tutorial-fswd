@@ -5,29 +5,18 @@
 </head>
 <body>
     <script>
-    // function sum1(a,b){
-    //     return a+b
-    // }
-    // const sum2= function(a,b){
-    //     return a+b
-    // }
+    const arr = [1,2,3,4,5,6,7,8,9,10]
+    function even(item){
+        if(item%2==0){
+            return true
+        }
+        else{
+            return false
+        }
+    }
 
-    // const sum3= (a,b) =>{
-    //     return a+b
-    // }
-
-    // const sum4= (a,b) => a+b
-
-    // console.log(sum1(2,3))
-    // console.log(sum2(2,3))
-    // console.log(sum3(2,3))
-    // console.log(sum4(2,3))
-
-    const arr = [1 ,2 ,3 ,4 ,5]
-    const arr2 = arr.map(item => item*2)
-
-    console.log(arr2)
-
+    const newarr=arr.filter(even)
+    console.log(newarr)
 
      
       </script>
