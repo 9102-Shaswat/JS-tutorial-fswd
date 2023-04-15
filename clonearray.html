@@ -6,6 +6,7 @@
     </head>
     <body>
         <script>
+            //spreading array
           const a=[1,2,3,4]
           const b=[5,6,7,8]
           const c=[...a,...b]
@@ -15,11 +16,44 @@
         const obj1={
             name: 'john',
             age: 18,
+            car:{
+                brand: 'BMW',
+                model: 'X5'
+            }
         }
         const obj2={
             ...obj1
         }
-        console.log(obj2)
+
+        // obj1.name= 'jack'
+        // //only this part will be updated
+        // obj1.car.brand= 'Mercedes'
+        // obj1.car.model= 'A20'
+        // console.log(obj2)
+
+        // for(let key in obj1){
+        //     console.log(key,obj1[key])
+        // }
+
+        // Object.keys(obj1).forEach(key =>{
+        //     console.log(key)
+        // })
+
+        //destructuring
+        var {name,age,car} = obj1
+        console.log( name,age,car)
+
+        //nested object will not be destructured
+
+        var {name,age,brand} = obj1
+        console.log( name,age,brand)
+
+        //destructuring array
+        const arr =['jack','jone','jam']
+        const [name1,name2,name3]= arr
+        console.log(name1,name2,name3)
+
+
           </script>
         </body>
-</html>git
+</html>
